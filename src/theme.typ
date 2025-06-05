@@ -1,11 +1,12 @@
 // Colors used across the template.
 #let stroke-color = luma(200)
 #let fill-color = luma(25)
-#let main-color = rgb("#cebd74")
-#let sub-color = rgb("#79745d")
+#let main-color = rgb("#faf5cd")
+#let sub-color = rgb("#34332b")
 #let contrast-color = aqua
 
 #let font-hei = "HYTieXianHei-65J"
+#let font-head = "HYWanFengSong"
 #let font-content = "HYXuanSong"
 #let font-emph = "STDongGuanTi"
 

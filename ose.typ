@@ -101,7 +101,7 @@
   // Default is Linux Libertine at 11pt
   set text(font: (font-content,"HYXuanSong","Noto Serif CJK SC","Libertinus Serif", "Libertinus Serif"), size: 10pt)
 
-  // 设置斜体字体。
+  // 设置强调字体。
   show emph: text.with(font: (font-emph,"STDongGuanTi","Zhuque Fangsong (technical preview)","YouYuan","Libertinus Serif", "STKaiti"))
 
   // Set raw text font.
@@ -124,7 +124,7 @@
     },
     align(center + top, block(width: 100%,stroke: none)[
       #let v-space = v(2em, weak: true)
-      #text(stroke: 1pt + luma(), 60pt,weight: "extrabold",font: "HYWanFengSong")[*#title*]
+      #text(stroke: 1pt + luma(), 60pt,weight: "extrabold",font: font-head)[*#title*]
       #v-space
       #text(fill: luma(v), stroke: 0.3pt + luma(1), 1.5em,weight: "bold",font: font-hei)[*#sub-title*]
 
@@ -220,7 +220,7 @@ show table.cell.where(y: 0): set text(weight: "medium",font:font-hei)
     set text(
       weight: "extrabold",
       fill: fill-color,
-      font: "HYWanFengSong",
+      font: font-head,
     )
     if counter(heading).get().first() != 1 {
       pagebreak(weak: true)
@@ -279,7 +279,7 @@ show table.cell.where(y: 0): set text(weight: "medium",font:font-hei)
         34pt, 
         weight: "extrabold",
         fill: fill-color,
-        font: "HYWanFengSong",
+        font: font-head,
         )
       it.body
       // block(
