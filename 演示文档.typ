@@ -161,12 +161,8 @@ _精灵是奈恩星中的一些古老凡人种族的总称，最主要的特征�
 === 复杂表格演示
 下面演示一个跨列高级表格的试用，请直接查看使用文档的源代码。
 
-#place(
-  center + bottom,
-  float: true,
-  scope: "parent",
-)[
-#figure()[
+
+#figure(placement: auto, scope: "parent")[
   #table(
     columns: (3em,1fr),
     align: (right,left),
@@ -182,5 +178,4 @@ _精灵是奈恩星中的一些古老凡人种族的总称，最主要的特征�
     [9],[女士：该角色接受魔法治疗时，额外获得 1hp。每日对每种魔法治疗最多生效一次。],
 
   )
-]
 ]
